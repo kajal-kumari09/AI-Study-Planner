@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>AI Study Planner</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>AI Study Planner</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <h1>📚 AI Study Planner</h1>
 
-  <div class="container">
-    <h1>📚 AI Study Planner</h1>
+        <input type="text" id="taskInput" placeholder="Enter your study task">
+        <input type="number" id="hoursInput" placeholder="Hours">
+        <button onclick="addTask()">Add Task</button>
 
-    <input type="text" id="subject" placeholder="Enter Subject">
-    <input type="number" id="hours" placeholder="Study Hours">
+        <ul id="taskList"></ul>
 
-    <button onclick="generatePlan()">Generate Plan</button>
+        <button class="plan-btn" onclick="generatePlan()">Generate Smart Plan</button>
+        <div id="planOutput"></div>
+    </div>
 
-    <h2>Your Plan:</h2>
-    <ul id="planList"></ul>
-  </div>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
